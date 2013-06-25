@@ -12,6 +12,7 @@ namespace FOR_Application
 {
     public partial class frmRacun : Form
     {
+
         public frmRacun()
         {
             InitializeComponent();
@@ -24,8 +25,8 @@ namespace FOR_Application
             this.artikliTableAdapter1.FillBy(this.pi2013FastOrderdbDataSet1.Artikli, narudzbaID);
             this.Stavke_narudzbeTableAdapter.FillByIDnar(this.pi2013FastOrderdbDataSet.Stavke_narudzbe, narudzbaID);
             this.stavke_narudzbeTableAdapter1.FillByIDnar(this.pi2013FastOrderdbDataSet1.Stavke_narudzbe, narudzbaID);
-            this.NarudzbaTableAdapter.FillBy(this.pi2013FastOrderdbDataSet.Narudzba, narudzbaID);
-            this.narudzbaTableAdapter1.FillBy(this.pi2013FastOrderdbDataSet1.Narudzba, narudzbaID);
+            this.NarudzbaTableAdapter.Fill(this.pi2013FastOrderdbDataSet.Narudzba);
+            this.narudzbaTableAdapter1.Fill(this.pi2013FastOrderdbDataSet1.Narudzba);
 
             this.reportViewer1.RefreshReport();
         }

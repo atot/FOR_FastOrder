@@ -48,7 +48,6 @@
             this.artikliBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stavkeNarudzbeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.lstStatus = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.izbornikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izlazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,7 +97,6 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView2);
-            this.splitContainer1.Panel2.Controls.Add(this.lstStatus);
             this.splitContainer1.Size = new System.Drawing.Size(912, 400);
             this.splitContainer1.SplitterDistance = 239;
             this.splitContainer1.TabIndex = 0;
@@ -118,10 +116,10 @@
             this.fKIDzaposlenikaDataGridViewTextBoxColumn,
             this.iDStatusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.narudzbaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(906, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(647, 233);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
@@ -194,7 +192,7 @@
             this.fKIDartiklaDataGridViewTextBoxColumn,
             this.kolicinaDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.stavkeNarudzbeBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(10, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -259,14 +257,6 @@
             this.stavkeNarudzbeBindingSource1.DataMember = "Stavke narudzbe";
             this.stavkeNarudzbeBindingSource1.DataSource = this.pi2013FastOrderdbDataSet;
             // 
-            // lstStatus
-            // 
-            this.lstStatus.FormattingEnabled = true;
-            this.lstStatus.Location = new System.Drawing.Point(685, 3);
-            this.lstStatus.Name = "lstStatus";
-            this.lstStatus.Size = new System.Drawing.Size(224, 147);
-            this.lstStatus.TabIndex = 0;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -278,7 +268,7 @@
             this.povratneInformacijeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(917, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(652, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -404,7 +394,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(917, 428);
+            this.ClientSize = new System.Drawing.Size(652, 429);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -435,7 +425,6 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.ListBox lstStatus;
         private System.Windows.Forms.DataGridView dataGridView1;
         private pi2013FastOrderdbDataSet pi2013FastOrderdbDataSet;
         private System.Windows.Forms.BindingSource narudzbaBindingSource;

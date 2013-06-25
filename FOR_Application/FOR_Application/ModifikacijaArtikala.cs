@@ -14,6 +14,7 @@ namespace FOR_Application
     public partial class frmModifikacijaArtikala : Form
     {
         Artikli artikli;
+
         public frmModifikacijaArtikala()
         {
             InitializeComponent();
@@ -23,17 +24,14 @@ namespace FOR_Application
             this.txtNazivArtikla.Text = "";
             this.txtOpisArtikla.Text = "";
 
-           
+
         }
-        
+
 
         private void btnDodajArtikl_Click(object sender, EventArgs e)
         {
-            artikli.Naziv = txtNazivArtikla.Text;
-            artikli.Jedinicna_cijena = float.Parse(txtJedinicnaCijena.Text);
-            artikli.Opis_artikla = txtOpisArtikla.Text;
-            artikli.Jedinica_mjere = txtJedinicaMjere.Text;
-            artikli.DodajArtikl();
+            frmDodajArtikl dodaj_artikl = new frmDodajArtikl();
+            dodaj_artikl.Show();
 
         }
 
@@ -46,11 +44,22 @@ namespace FOR_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+            dgvListaArtikala.Rows.RemoveAt(dgvListaArtikala.CurrentRow.Index);
             this.Validate();
             this.artikliBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.pi2013FastOrderdbDataSet);
         }
 
+        private void btnSpremimodif_Click(object sender, EventArgs e)
+        {
+            bazaRad.Instance.Query("update [Artikli] set Naziv='" + txtNazivArtikla.Text + "', Jedinicna_cijena=" + Convert.ToDouble(txtJedinicnaCijena.Text) + ", Opis_artikla='" + txtOpisArtikla.Text + "', Jedinica_mjere = '" + txtJedinicaMjere.Text + "' where ID_artikla=" + Convert.ToInt32(this.dgvListaArtikala.SelectedRows[0].Index) + ";");
+            this.Validate();
+            this.artikliBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.pi2013FastOrderdbDataSet);
+        }
+
+
+
+ 
     }
 }

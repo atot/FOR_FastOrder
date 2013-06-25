@@ -207,6 +207,12 @@ namespace Kreiranje_narudžbe
         {
             this.Close();
         }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEngUpute instructions = new frmEngUpute();
+            instructions.Show();
+        }
                      
                     
 

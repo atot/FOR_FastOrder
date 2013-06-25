@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EngUpute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngUpute.Designer.cs">
+      <DependentUpon>EngUpute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forma_za_odabir_jela.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EngUpute.resx">
+      <DependentUpon>EngUpute.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forma_za_odabir_jela.resx">
       <DependentUpon>Forma_za_odabir_jela.cs</DependentUpon>
     </EmbeddedResource>

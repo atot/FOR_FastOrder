@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Kreiranje_narudžbe
 {
-    public partial class frmUpute : Form
+    public partial class frmEngUpute : Form
     {
-        public frmUpute()
+        public frmEngUpute()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmUpute.ActiveForm.Close();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Close();
         }

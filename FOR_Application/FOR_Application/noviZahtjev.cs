@@ -12,10 +12,12 @@ namespace FOR_Application
     class noviZahtjev : bazaRad
     {
         /// <summary>
-        /// s ovim SQL upitom testirati cemo ID stanje, ako je ono strogo vece od prethodnog onda smo zaprimili novu naruzdbu
+        /// s ovim SQL upitom testirati cemo ID status, ako je ono vece od 0 onda je to znak da smo zaprimili novu naruzdbu
         /// test cemo osvjezavati uz pomoc tickera (klasa pregledavanje narudzbi)
+        /// drugi upit ce nam koristi za auziriranje novog statusa
         /// </summary>
-        string upit = "Select ID_narudzbe from Narudzba where IDstatus = 1;";
+        private string upit = "SELECT COUNT(IDstatus) AS brojNarudzbi, IDstatus FROM Narudzba WHERE IDstatus = 1 GROUP BY IDstatus";
+        private string updateString = "UPDATE Narudzba SET IDStatus = 0";
         frmPregledNarudzbi pregled;
 
         /// <summary>
@@ -27,15 +29,17 @@ namespace FOR_Application
             this.pregled = Pregled;
         }
 
-        public void pregledajNoveZahtjeve()
+        /// <summary>
+        /// metoda kojom cemo ucitavati navedeni upit i koja ce vracat odgovarajucu vrijednost
+        /// </summary>
+           public int pregledajNoveZahtjeve()
         {
             try
             {
                 SqlDataReader reader = QueryReader(upit);
                 while (reader.Read())
                 {
-                    //postavljamo novu vrijednost na listbox kako bi prikazivali broj novih zahtjeva
-                    pregled.izmjenaStanja(reader.GetValue(0).ToString());
+                    return Convert.ToInt32(reader.GetValue(0));
                 }
 
             }
@@ -43,10 +47,17 @@ namespace FOR_Application
             {
                 MessageBox.Show(e.Message);
             }
+            return 0;
+        }
 
-
+        /// <summary>
+        /// metoda kojom updatamo nove zahtjeve ukoliko ih ima
+        /// </summary>
+        public void updateNoviZahtjevi() {
+            QueryReader(updateString);
         }
 
 
     }
 }
+

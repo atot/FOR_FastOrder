@@ -88,7 +88,7 @@
             this.msPomoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msUputeZaKoristenje});
             this.msPomoc.Name = "msPomoc";
-            this.msPomoc.Size = new System.Drawing.Size(53, 20);
+            this.msPomoc.Size = new System.Drawing.Size(57, 20);
             this.msPomoc.Text = "Pomoć";
             // 
             // msUputeZaKoristenje
@@ -103,13 +103,14 @@
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.englishToolStripMenuItem.Text = "English";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // croatianToolStripMenuItem
             // 
             this.croatianToolStripMenuItem.Name = "croatianToolStripMenuItem";
-            this.croatianToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.croatianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.croatianToolStripMenuItem.Text = "Croatian";
             this.croatianToolStripMenuItem.Click += new System.EventHandler(this.croatianToolStripMenuItem_Click);
             // 

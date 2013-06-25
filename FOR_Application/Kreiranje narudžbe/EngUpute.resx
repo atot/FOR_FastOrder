@@ -117,58 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="artikliBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>239, 95</value>
-  </metadata>
-  <metadata name="pi2013FastOrderdbDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>383, 56</value>
-  </metadata>
-  <metadata name="stavkeNarudzbeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>406, 95</value>
-  </metadata>
-  <metadata name="narudzbaBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>624, 95</value>
-  </metadata>
-  <data name="narudzbaBindingSource1.DataSource" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAGNNaWNyb3NvZnQuUmVwb3J0Vmlld2VyLldpbkZvcm1zLCBWZXJz
-        aW9uPTExLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTg5ODQ1ZGNkODA4MGNj
-        OTEFAQAAADdNaWNyb3NvZnQuUmVwb3J0aW5nLldpbkZvcm1zLlJlcG9ydERhdGFTb3VyY2VDb2xsZWN0
-        aW9uBAAAAAVDb3VudAVOYW1lMAVOYW1lMQVOYW1lMgABAQEIAgAAAAMAAAAGAwAAAAhEYXRhU2V0MQYE
-        AAAACERhdGFTZXQyBgUAAAAIRGF0YVNldDML
-</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>1.	Select a meal on button „Odabir jela“
+	1.1.	 Select a wanted meal and click on button „Dodaj jelo“.
+	1.2.	 If you want you can erase selected meal with click on button „Obriši jelo“
+	1.3.	 Click „Spremi odabir“ to save your choice of meal.
+2.	Select a drink on button „Odabir piće“
+	2.1.	 Select a wanted drink and click on button „Dodaj piće“.
+	2.2.	 If you want you can delete selected drink with click on button „Obriši piće“
+	2.3.	 Click „Spremi odabir“ to save your choice of drink.
+3.	You can see the oredered items
+	3.1.	If you want to delete an item, click on the button „Obriši stavku“.
+	3.2.	If you wish to leave an additional requirement enter text in the marked space.
+4.	To order click the button „Naruči“ .
+	4.1.	If you wish to leave feedback, click "Yes", otherwise click "No".
+5.	Order has been saved.</value>
   </data>
-  <metadata name="racunZaGostaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>812, 95</value>
-  </metadata>
-  <metadata name="Stavke_narudzbeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>534, 17</value>
-  </metadata>
-  <metadata name="pi2013FastOrderdbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ArtikliBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>216, 17</value>
-  </metadata>
-  <metadata name="ArtikliTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>378, 17</value>
-  </metadata>
-  <metadata name="Stavke_narudzbeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>756, 17</value>
-  </metadata>
-  <metadata name="NarudzbaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="NarudzbaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>201, 56</value>
-  </metadata>
-  <metadata name="artikliTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>583, 57</value>
-  </metadata>
-  <metadata name="stavke_narudzbeTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="narudzbaTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>745, 55</value>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

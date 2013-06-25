@@ -67,6 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artikli.cs" />
+    <Compile Include="DodajArtikli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajArtikli.Designer.cs">
+      <DependentUpon>DodajArtikli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evidencija zaposlenih.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="ModifikacijaArtikala.Designer.cs">
       <DependentUpon>ModifikacijaArtikala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifikacija_zaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifikacija_zaposlenika.Designer.cs">
+      <DependentUpon>Modifikacija_zaposlenika.cs</DependentUpon>
     </Compile>
     <Compile Include="noviZahtjev.cs" />
     <Compile Include="pi2013FastOrderdbDataSet.Designer.cs">
@@ -119,6 +131,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stol.cs" />
     <Compile Include="Zaposlenik.cs" />
+    <EmbeddedResource Include="DodajArtikli.resx">
+      <DependentUpon>DodajArtikli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Evidencija zaposlenih.resx">
       <DependentUpon>Evidencija zaposlenih.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaArtikala.resx">
       <DependentUpon>ModifikacijaArtikala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifikacija_zaposlenika.resx">
+      <DependentUpon>Modifikacija_zaposlenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PovratnaInfo.resx">
       <DependentUpon>PovratnaInfo.cs</DependentUpon>

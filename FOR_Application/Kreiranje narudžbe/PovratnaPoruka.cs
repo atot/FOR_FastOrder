@@ -22,8 +22,8 @@ namespace Kreiranje_narudžbe
         
         private void btnPošaljiPoruku_Click(object sender, EventArgs e)
         {
-            object id_narudzbe = bazaRad.Instance.DohvatiVrijednost("select top 1 ID_narudzbe from Narudzba order by ID_narudzbe desc");
-
+            //object id_narudzbe = bazaRad.Instance.DohvatiVrijednost("select top 1 ID_narudzbe from Narudzba order by ID_narudzbe desc");
+            object id_narudzbe = bazaRad.Instance.DohvatiVrijednost("Exec VratiIdNarudzbe3");
             bazaRad.Instance.Query("insert into [Povratna informacija] (Opis,FK_ID_narudzbe) values ('" + this.txtPovratnaPoruka.Text + "',"+ id_narudzbe+")");
             
             this.Close();

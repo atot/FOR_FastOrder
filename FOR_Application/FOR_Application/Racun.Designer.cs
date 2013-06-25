@@ -90,7 +90,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.artikliBindingSource1;
             reportDataSource2.Name = "DataSet2";
-            reportDataSource2.Value = this.stavkeNarudzbeBindingSource;
+            reportDataSource2.Value = this.Stavke_narudzbeBindingSource;
             reportDataSource3.Name = "DataSet3";
             reportDataSource3.Value = this.narudzbaBindingSource1;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
